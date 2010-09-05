@@ -1,0 +1,75 @@
+/* Defaults
+ * ----------------------------------------------------------------------- */
+
+article, aside, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+body {
+    margin: 40px auto;
+    width: 500px;
+    
+    color: #333;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+iframe {
+    display: none;
+}
+
+/* Content
+ * ----------------------------------------------------------------------- */
+
+h1, h2 {
+    -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+    color: #555;
+}
+
+p {
+    line-height: 140%;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #999;
+}
+
+#usage {
+    background: #f0f0f0;
+    margin: 0 -20px;
+    /* Force subelement's margin to fit inside the box */
+    padding: 1px 20px;
+}
+
+#usage pre {
+    background: #fff;
+    margin: -6px -10px;
+    padding: 12px 20px;
+}
+
+#usage a#bookmarklet {
+    background: #bbb;
+    color: #333;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 8px 3px 8px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ddd;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#about {
+    margin-top: 40px;
+    font-size: 12px;
+}

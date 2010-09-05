@@ -1,0 +1,7 @@
+# Place the following library in this directory:
+chardet
+flask
+html5lib
+httplib2
+jinja2
+werkzeug

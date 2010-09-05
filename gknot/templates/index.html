@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/base.css">
+    <title>Gknot</title>
+  </head>
+  <body>
+    <section id="introduction">
+      <h1>Gknot</h1>
+      <p>
+        <em>Gknot</em> is a <strong>simple web page encoding conversation
+        service</strong>. It converts any non UTF-8 webpages to proper
+        encoding and automatically rewrite links to its original location.
+      </p>
+    </section>
+    <section id="usage">
+      <p>
+        To use Gknot, simply append after this page URL in this format:
+      </p>
+      <pre>/soup/<strong>protocol</strong>/<strong>domain</strong>/<strong>path</strong></pre>
+      <p>
+        Or you can use this bookmarklet:
+        <a href="javascript:d=document;d.location='http://gknotd.appspot.com/soup?source='+encodeURIComponent(d.location);" id="bookmarklet">Knot it!</a>
+      </p>
+    </section>
+    <section id="narrate">
+      <p>
+        Please note this service is run on a very limited resource.
+        If the service is down due to quota limit, please try again
+        the next day.
+      </p>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        <em>Gknotd</em> was written by <a href="http://grid.in.th/">
+          Kridsada Thanabulpong</a> using <a href="http://diveintomark.org/">
+          Mark Pilgrim</a>'s excellent
+        <a href="http://chardet.feedparser.org/">chardet</a> library
+        for encoding detection. It is hosted with
+        <a href="http://code.google.com/appengine/">Google AppEngine</a>.
+    </section>
+  </body>
+</html>
