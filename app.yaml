@@ -1,4 +1,4 @@
-application: gknot
+application: gknotd
 version: reef
 runtime: python
 api_version: 1
