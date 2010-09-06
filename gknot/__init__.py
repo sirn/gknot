@@ -37,7 +37,7 @@ http = httplib2.Http(memcache)
 @app.route('/')
 def index():
     """Return an introduction page to the service."""
-    return render_template('index.html')
+    return render_template('index.html', **locals())
 
 
 # Redirection page
@@ -100,11 +100,20 @@ url_attributes = [
 
 class ConversationError(Exception): pass
 
+def get_domain_parts(netloc):
+    parts = netloc.lower().split(':', 1)
+    return parts[0], parts[1] if len(parts) >= 2 else 80
+
 def convert(protocol, domain, path, query):
     """Convert any webpage into UTF-8 and rewrite all internal links
     as absolute links.  If the encoding detection confidence is less
     than 0.5, an error is thrown.
     """
+    
+    local = get_domain_parts(urlparse.urlparse(request.host_url).netloc)
+    remote = get_domain_parts(domain)
+    if local == remote:
+        raise ConversationError('space-time continuum interruption')
     
     if protocol.lower() not in ('http', 'https'):
         raise ConversationError('only HTTP and HTTPS are supported')

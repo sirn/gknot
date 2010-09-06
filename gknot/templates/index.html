@@ -21,7 +21,7 @@
       <pre>/soup/<strong>protocol</strong>/<strong>domain</strong>/<strong>path</strong></pre>
       <p>
         Or you can use this bookmarklet:
-        <a href="javascript:d=document;d.location='http://gknotd.appspot.com/soup?source='+encodeURIComponent(d.location);" id="bookmarklet">Knot it!</a>
+        <a href="javascript:d=document;d.location='{{ url_for('land', _external=True) }}?source='+encodeURIComponent(d.location);" id="bookmarklet">Knot it!</a>
       </p>
     </section>
     <section id="narrate">
@@ -34,14 +34,14 @@
     <section id="about">
       <h2>About</h2>
       <p>
-        <em>Gknotd</em> was written by <a href="http://grid.in.th/">
-          Kridsada Thanabulpong</a> using <a href="http://diveintomark.org/">
-          Mark Pilgrim</a>'s excellent
-        <a href="http://chardet.feedparser.org/">chardet</a> library
-        for encoding detection.
-        <a href="http://code.google.com/appengine/">Google AppEngine</a>.
-        This website's <a href="http://github.com/sirn/gknot">source code</a>
-        is licensed under <em>BSD license</em>.
+        <em>Gknot</em> was written by <a href="http://grid.in.th/">Kridsada
+          Thanabulpong</a> using <a href="http://diveintomark.org/">Mark
+          Pilgrim</a>'s excellent <a href="http://chardet.feedparser.org/">
+          chardet</a> library for encoding detection.
+        <a href="http://github.com/sirn/gknot">Source code</a> is available
+        under <em>BSD license</em>. <!-- Yup, you can deploy your own. -->
+        This service runs on <a href="http://code.google.com/appengine/">
+          Google AppEngine</a>.
       </p>
     </section>
   </body>
