@@ -102,7 +102,7 @@ class ConversationError(Exception): pass
 
 def get_domain_parts(netloc):
     parts = netloc.lower().split(':', 1)
-    return parts[0], parts[1] if len(parts) >= 2 else 80
+    return parts[0], parts[1] if len(parts) >= 2 else '80'
 
 def convert(protocol, domain, path, query):
     """Convert any webpage into UTF-8 and rewrite all internal links
