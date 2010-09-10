@@ -13,18 +13,16 @@
         service</strong>. It converts any non UTF-8 webpages to proper
         encoding and automatically rewrite links to its original location.
       </p>
-    </section>
-    <section id="usage">
-      <p>
-        To use Gknot, simply append after this page URL in this format:
-      </p>
-      <pre>/soup/<strong>protocol</strong>/<strong>domain</strong>/<strong>path</strong></pre>
-      <p>
-        Or you can use this bookmarklet:
-        <a href="javascript:(function(){d=document;d.location='{{ url_for('land', _external=True) }}?source='+encodeURIComponent(d.location);})();" id="bookmarklet">Knot it!</a>
-      </p>
-    </section>
-    <section id="narrate">
+      <div id="usage">
+        <p>
+          To use Gknot, simply append after this page URL in this format:
+        </p>
+        <pre>/soup/<strong>protocol</strong>/<strong>domain</strong>/<strong>path</strong></pre>
+        <p>
+          Or you can use this bookmarklet:
+          <a href="javascript:(function(){d=document;d.location='{{ url_for('land', _external=True) }}?source='+encodeURIComponent(d.location);})();" id="bookmarklet">Knot it!</a>
+        </p>
+      </div>
       <p>
         Please note this service is run on a very limited resource.
         If the service is down due to quota limit, please try again

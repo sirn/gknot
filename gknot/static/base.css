@@ -42,6 +42,10 @@ a:hover {
     color: #999;
 }
 
+section {
+    margin: 40px 0;
+}
+
 #usage {
     background: #f0f0f0;
     margin: 0 -20px;
@@ -70,6 +74,5 @@ a:hover {
 }
 
 #about {
-    margin-top: 40px;
     font-size: 12px;
 }
