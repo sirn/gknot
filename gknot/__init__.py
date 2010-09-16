@@ -151,7 +151,7 @@ def convert(protocol, domain, path, query):
     detection = chardet.detect(body)
     if detection['confidence'] <= 0.5:
         raise ConversationError('could not detect page encoding')
-    content = body.decode(detection['encoding'])
+    content = body.decode(detection['encoding'], 'ignore')
     
     # Base URL is taken from Content-Location return by httplib2 to
     # make sure redirection is properly followed.
